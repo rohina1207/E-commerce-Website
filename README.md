@@ -15,6 +15,7 @@ Username: lisa
 Password: 765
 
 Database
+
 MySQL or MariaDB can be used as the database for this project. The database connection can be configured in the application.properties file, with the appropriate values for the following properties: (you'd better use another username not root)
 
     db.url=jdbc:mysql://[ip address of db]:[port of db]/ecommjava?createDatabaseIfNotExist=true
@@ -25,6 +26,7 @@ if you met the error java.lang.IllegalArgumentException: Could not resolve place
 Having done that, you must create some base data in the database. You can do that by running the basedata.sql script on the database. Check out Google for how to do that, because it depends on what tool you are using to access said database.
 
 Web Directories
+
 The views are located in src/main/webapp/views, but for some reason, Spring Boot doesn't recognize that directory. To remedy this, you must change the working directory of the project in your IDE. If you're using IntelliJ IDEA, follow these steps:
 
 Click on the "Edit Configurations..." button in the top right corner of the IDE
@@ -46,13 +48,21 @@ Models
 represent data as entity and relationship among them.
 View
 receive data from controller and show with frontend.
+
 Endpoints
+
 http://localhost:8080/
+
 http://localhost:8080/register
+
 http://localhost:8080/admin/products
+
 http://localhost:8080/admin/customers
+
 http://localhost:8080/admin/categories
+
 http://localhost:8080/admin/Dashboard
+
 
 
 
